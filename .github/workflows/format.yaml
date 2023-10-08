@@ -1,0 +1,15 @@
+name: Format
+
+on: [push, pull_request]
+
+jobs:
+  lua-format:
+    name: Luacheck
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v3
+      - uses: JohnnyMorganz/stylua-action@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          version: 0.18.2
+          args: --check .

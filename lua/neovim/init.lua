@@ -1,0 +1,7 @@
+require("neovim.constant._init")
+require("neovim.function._init")
+require("neovim.setup")
+require("neovim.remap")
+require("neovim.autocmd")
+require("neovim.plugin")
+require("neovim.plugins._init")
