@@ -79,6 +79,8 @@ vim.keymap.set("n", "<S-h>", "<cmd>BufferLineCyclePrev<CR>", general_opts)
 -- Move Line
 vim.keymap.set("n", "<A-j>", "<cmd>m .+1<CR>==", general_opts)
 vim.keymap.set("n", "<A-k>", "<cmd>m .-2<CR>==", general_opts)
+vim.keymap.set("v", "<A-j>", ":m '>+1<CR>gv-gv", general_opts)
+vim.keymap.set("v", "<A-k>", ":m '<-2<CR>gv-gv", general_opts)
 
 vim.keymap.set("v", "<", "<gv", general_opts)
 vim.keymap.set("v", ">", ">gv", general_opts)
