@@ -101,6 +101,7 @@ require("lazy").setup({
       render = "wrapped-compact",
       timeout = 3000,
       level = vim.log.levels.INFO,
+      top_down = false,
     },
   },
   {
