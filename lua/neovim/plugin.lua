@@ -135,4 +135,17 @@ require("lazy").setup({
   { "wakatime/vim-wakatime" },
   -- ZenMode -- Kill Distraction
   { "folke/zen-mode.nvim", opts = {} },
+  -- ChatGPT
+  {
+    "jackMort/ChatGPT.nvim",
+    event = "VeryLazy",
+    config = function()
+      require("chatgpt").setup()
+    end,
+    dependencies = {
+      "MunifTanjim/nui.nvim",
+      "nvim-lua/plenary.nvim",
+      "nvim-telescope/telescope.nvim",
+    },
+  },
 })
