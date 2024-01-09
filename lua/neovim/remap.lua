@@ -97,6 +97,7 @@ vim.keymap.set("v", "{}", "c{}<ESC>P", general_opts)
 vim.keymap.set("v", '""', 'c""<ESC>P', general_opts)
 vim.keymap.set("v", "''", "c''<ESC>P", general_opts)
 vim.keymap.set("v", "``", "c``<ESC>P", general_opts)
+vim.keymap.set("v", "**", "c****<ESC>hP", general_opts)
 
 -- navigate tab completion with <c-j> and <c-k>
 -- runs conditionally
