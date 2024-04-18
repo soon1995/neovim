@@ -56,6 +56,7 @@ require("which-key").register({
     s = { ":Telescope lsp_document_symbols<CR>", "Document Symbols" },
     S = { ":Telescope lsp_dynamic_workspace_symbols<CR>", "Workspace Symbols" },
     n = { ":Telescope notify<CR>", "Notify" },
+    b = { ":Telescope harpoon marks<CR>", "Buffer Marks" },
   },
   b = {
     name = "Buffer",
@@ -64,6 +65,7 @@ require("which-key").register({
     l = { ":BufferLineCloseRight<CR>", "Kill Right Buffers" },
     p = { ":BufferLinePick<CR>", "Pick Buffer" },
     f = { ":Telescope buffers<CR>", "Find Buffer" },
+    a = { ":lua require('harpoon.mark').add_file()<CR>", "Mark File" },
   },
   g = {
     name = "Git",
