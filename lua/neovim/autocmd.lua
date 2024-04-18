@@ -15,6 +15,10 @@ local definitions = {
       desc = "Save Session Before Leave Vim",
       pattern = "*.*",
       callback = function()
+        local exists, dap = pcall(require, "dapui")
+        if exists then
+          dap.close()
+        end
         vim.cmd(":NvimTreeClose")
         vim.cmd("mksession!" .. get_last_session_filepath())
       end,

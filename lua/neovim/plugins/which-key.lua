@@ -156,4 +156,15 @@ require("which-key").register({
     r = { "<cmd>ChatGPTRun roxygen_edit<CR>", "Roxygen Edit", mode = { "n", "v" } },
     l = { "<cmd>ChatGPTRun code_readability_analysis<CR>", "Code Readability Analysis", mode = { "n", "v" } },
   },
+  d = {
+    o = {
+      function()
+        require("dapui").toggle()
+      end,
+      "Toggle Debug UI",
+    },
+    b = { ":DapToggleBreakpoint<CR>", "Toggle Breakpoint" },
+    s = { ":DapContinue<CR>", "Continue Debug" },
+    c = { ":DapTerminate<CR>", "Bye" },
+  },
 }, { prefix = "<leader>" })

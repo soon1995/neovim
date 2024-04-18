@@ -155,4 +155,27 @@ require("lazy").setup({
       "nvim-telescope/telescope.nvim",
     },
   },
+  -- Browser Bookmarks
+  {
+    "dhruvmanila/browser-bookmarks.nvim",
+    version = "*",
+    opts = {
+      selected_browser = "vivaldi",
+    },
+  },
+  --  The ability to specify, or on the fly, mark and create persisting key strokes to go to the files you want
+  {
+    "ThePrimeagen/harpoon",
+  },
+  -- debug
+  { "mfussenegger/nvim-dap" },
+  { "rcarriga/nvim-dap-ui", opts = {} },
+  {
+    "leoluz/nvim-dap-go",
+    ft = "go",
+    config = function(_, opts)
+      require("dap-go").setup(opts)
+    end,
+  },
+  { "theHamsta/nvim-dap-virtual-text", opts = {} },
 })
