@@ -1,7 +1,7 @@
 require("mkdnflow").setup({
   mappings = {
-    MkdnNewListItem = { "i", "<CR>" },
-    MkdnNewListItemAboveInsert = false,
+    -- MkdnNewListItem = { "i", "<CR>" },
+    -- MkdnNewListItemAboveInsert = false,
     MkdnIncreaseHeading = { "n", "-" },
     MkdnDecreaseHeading = { "n", "+" },
     MkdnDestroyLink = { "n", "<M-q>" },
