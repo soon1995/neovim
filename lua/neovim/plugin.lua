@@ -29,13 +29,20 @@ require("lazy").setup({
   { "norcalli/nvim-colorizer.lua" }, -- Colorize Buffer
   { "rose-pine/neovim", name = "rose-pine" },
   { "i3d/vim-jimbothemes" },
+  { "catppuccin/nvim" },
+  { "morhetz/gruvbox" },
+  {
+    "navarasu/onedark.nvim",
+    opts = {
+      style = "cool",
+    },
+  },
   -- Treesitter
   {
     "nvim-treesitter/nvim-treesitter",
     dependencies = {
       "JoosepAlviste/nvim-ts-context-commentstring",
     },
-    build = ":TSUpdate",
   },
   { "numToStr/Comment.nvim", opts = {} },
   -- LSP Support

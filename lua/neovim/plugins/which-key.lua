@@ -91,9 +91,54 @@ require("which-key").register({
   },
   t = {
     name = "Theme",
-    i = { ":colorscheme ironman_dark<CR>", "Ironman Dark" },
-    m = { ":colorscheme matrix2<CR>", "Matrix 2" },
-    r = { ":colorscheme rose-pine<CR>", "Rose Pine" },
+    o = {
+      function()
+        color_my_dark_pencils("onedark")
+      end,
+      "One Dark Cool",
+    },
+    i = {
+      function()
+        color_my_dark_pencils("ironman_dark")
+      end,
+      "Ironman Dark",
+    },
+    m = {
+      function()
+        color_my_dark_pencils("matrix2")
+      end,
+      "Matrix 2",
+    },
+    r = {
+      name = "Rose Pine",
+      l = {
+        function()
+          color_my_light_pencils("rose-pine")
+        end,
+        "Rose Pine Light",
+      },
+      d = {
+        function()
+          color_my_dark_pencils("rose-pine")
+        end,
+        "Rose Pine Dark",
+      },
+    },
+    g = {
+      name = "Gruvbox",
+      l = {
+        function()
+          color_my_light_pencils("gruvbox")
+        end,
+        "Gruvbox Light",
+      },
+      d = {
+        function()
+          color_my_dark_pencils("gruvbox")
+        end,
+        "Gruvbox Dark",
+      },
+    },
   },
   a = {
     name = "Ask ChatGPT",

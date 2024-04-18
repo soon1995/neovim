@@ -13,9 +13,16 @@ VIM_JIMBOTHEMES.correct = function(theme)
   vim.api.nvim_set_hl(0, "SpellRare", { undercurl = true })
 end
 
-function _G.color_my_pencils(theme)
+function _G.color_my_dark_pencils(theme)
   theme = theme or "ironman_dark"
   vim.opt.background = "dark"
+  vim.opt.termguicolors = true
+  vim.cmd.colorscheme(theme)
+end
+
+function _G.color_my_light_pencils(theme)
+  theme = theme or "ironman_dark"
+  vim.opt.background = "light"
   vim.opt.termguicolors = true
   vim.cmd.colorscheme(theme)
 end
@@ -27,4 +34,4 @@ vim.api.nvim_create_autocmd("ColorScheme", {
   end,
 })
 
-_G.color_my_pencils("ironman_dark")
+_G.color_my_dark_pencils("onedark")
