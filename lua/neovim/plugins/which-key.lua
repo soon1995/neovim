@@ -57,6 +57,7 @@ require("which-key").register({
     S = { ":Telescope lsp_dynamic_workspace_symbols<CR>", "Workspace Symbols" },
     n = { ":Telescope notify<CR>", "Notify" },
     b = { ":Telescope harpoon marks<CR>", "Buffer Marks" },
+    B = { ":Telescope bookmarks<CR>", "Browser Bookmarks" },
   },
   b = {
     name = "Buffer",

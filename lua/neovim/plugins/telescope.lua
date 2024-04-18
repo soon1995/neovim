@@ -86,10 +86,14 @@ telescope.setup({
       override_file_sorter = true, -- override the file sorter
       case_mode = "smart_case", -- or "ignore_case" or "respect_case"
     },
+    bookmarks = {
+      selected_browser = "vivaldi",
+    },
   },
 })
 telescope.load_extension("fzf")
 telescope.load_extension("docker")
 telescope.load_extension("projects")
 telescope.load_extension("notify")
+telescope.load_extension("bookmarks")
 telescope.load_extension("harpoon")
