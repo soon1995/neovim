@@ -88,6 +88,8 @@ telescope.setup({
     },
     bookmarks = {
       selected_browser = "vivaldi",
+      config_dir = "/mnt/c/Users/Alex Soon Ai Lin/AppData/Local/Vivaldi/User Data",
+      url_open_command = "wslview",
     },
   },
 })

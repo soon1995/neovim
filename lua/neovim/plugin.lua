@@ -161,6 +161,8 @@ require("lazy").setup({
     version = "*",
     opts = {
       selected_browser = "vivaldi",
+      config_dir = "/mnt/c/Users/Alex Soon Ai Lin/AppData/Local/Vivaldi/User Data",
+      url_open_command = "/mnt/c/MyProgram/vivaldi/Application/vivaldi.exe"
     },
   },
   --  The ability to specify, or on the fly, mark and create persisting key strokes to go to the files you want
